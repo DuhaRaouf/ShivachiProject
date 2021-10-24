@@ -1,0 +1,71 @@
+/* Left pane, fixed */
+#left-pane {
+  position: fixed;
+  height: 100%;
+  width: 60vw;
+}
+
+#left-pane .img-wrapper {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#left-pane .img-wrapper .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Sizing and cropping of image */
+  background-position: center;
+  background-size: cover;
+  /* Transition - the slow sliding of images */
+  transition: 0.5s all ease-in-out;
+}
+
+/* hiding images in #top-image */
+#left-pane #top-image .img {
+  top: 100%;
+}
+#left-pane #top-image .img.visible {
+  top: 0;
+}
+
+/* hiding images in #bottom-image */
+#left-pane #bottom-image .img {
+  bottom: 100%;
+}
+#left-pane #bottom-image .img.visible {
+  bottom: 0;
+}
+
+/* Right pane, scrolling with the page */
+
+#right-pane {
+  margin-left: 60vw;
+  margin-top: 100px;
+}
+
+.scrollable-content {
+  font-size: 450px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}
+.pane-btn{
+  z-index: 50000;
+  position: fixed;
+  left: 20px;
+  margin-top: -50px;
+  border: 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  font-size: 28px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+.pane-btn:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
