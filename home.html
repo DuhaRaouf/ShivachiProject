@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Headland+One&family=Quicksand:wght@300&family=Syncopate&display=swap" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <title>Shivachi</title>
+</head>
+<body>
+  <!--Pop Up Overlay-->
+  <div class="popup-overlay"  id="showOrHide">
+    <div class="popup">
+      <input onclick="showOrHideDiv()" type="checkbox" id="close"/>
+      <label class="close" for="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></label>
+      <h2 class="subscribe">Subscribe!<i class="fa fa-bell-o smallicon" aria-hidden="true"></i></h2>
+      <h3 class="sub-title">to our newsletter</b></h3>
+      <p class="sub-content">By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our Privacy Policy.</p>
+      <form class="inputs" id="subSend" action="sub.php" enctype="multipart/form-data" method="post">
+        <input class="contact-input pop-mail" type="email" placeholder="Email address.." id="emailsub" name="emailsub" required>
+        <input class="pop-send" type="submit" id="submit" value="Subscribe">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <header id="home">
+    <div class="container">
+      <div class="header-content">
+        <div id="navshadow">
+          <nav class="navmenu" id="navmenu">
+            <ul class="unstyled-list menulist">
+              <li class="menuitem"><a href="home.html#lookbook"><img src="imgs/icons/lookbook-01.png" width="100%"></a></li>
+              <li class="menuitem"><a href="home.html#about"><img src="imgs/icons/about2.png" width="100%"></a></li>
+              <li class="menuitem"><a href="home.html#contact"><img src="imgs/icons/contant-01-01.png" width="100%"></a></li>
+            </ul>
+          </nav>
+          <div id="headerlogo" style="z-index: 2500; color: white; font-size: 10vw; margin: 40vh 0; transition: .5s ease; /* -webkit-text-stroke: .8px rgba(255, 255, 255, 1); */"><b>SHIVACHI</b></div>
+          <!-- <a href="index.html"><img class="logo" src="imgs/header/logowhite1.png" draggable="false" alt="logo" /></a> -->
+          <!-- <input type="checkbox" id="navicon"/>
+          <label for="navicon"><i class="fa fa-bars " aria-hidden="true"></i></label> -->
+        </div>
+      <!--Home-->
+      <div class="homeimg"><img class="imgres" src="imgs/header/slider-1res.jpg"></div>
+    </div>
+  </div>
+  </header>
+  <br><br><br><br>
+
+  <!--LookBook-->
+  <section id="lookbook">
+    <div class="section-header">
+      <h2 class="section-title">LookBook</h2>
+      <span class="line"></span>
+    </div>
+    <br><br><br>
+    <div class="lookbook-item">
+      <div class="shadow">
+        <div class="booksection dress-section">
+        </div>
+        <div class="book-contet">
+          <h2 class="book-name"><a href="dresses.html">Dresses</a></h2>
+          <h4>Check out our latest collection!</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="lookbook-item">
+      <div class="shadow">
+        <div class="booksection scarf-section">
+        </div>
+        <div class="book-contet">
+          <h2 class="book-name"><a href="scarves.html">Scarves</a></h2>
+          <h4>Check out our latest collection!</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="lookbook-item">
+      <div class="shadow">
+       <div class="booksection bag-section">
+        </div>
+        <div class="book-contet">
+          <h2 class="book-name"><a href="bags.html">Bags</a></h2>
+          <h4>Check out our latest collection!</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About Us-->
+  <section id="about" class="about-us">
+    <!--About Image-->
+    <div class="about-img">
+      <img src="imgs/about/2.jpg" width="110%">
+    </div>
+    <!--About Info-->
+    <div class="about-info">
+      <div class="about-header">
+        <h2 class="about-title">About</h2>
+      </div>
+      <h3 class="about-name">NOHA MAHMOUD - Fashion Designer</h3>
+      <p class="about-desc">Her inspiration came from the Attitude to be Ambitious and still Enjoy life. The realization came early: Only a Combination brings Happiness.. The idea ame already as a teenager because as a Professional Tennis player she Traveled the World! During her countless trips it was Never possible to put all the belongings <b>in only One bag which could be worn Comfortable and looked Chic</b> at the same time. "In the phase of creation, in my designs”.</p>
+      <br>
+      <p class="about-desc">At SHIVACHI, We're more than a Brand, We're about You and Everything you Love.</p>
+      <br>
+      <p class="about-desc">We Are a company of Dreamers, Thinkers, Movers, Doers and Believers. We're not just Creating Designs, <b>We Are Helping people to Express themselves.</b> These are more than just pieces of fabric. They're Keepsakes that will remain with you for Years. With every garment we create, We are Sharing with you a piece of ourselves.</b></p>
+      <div class="shivach-name"><b>SHIVACHI</b>
+        <h2><b>2016</b></h2>
+      </div>
+      <div class="section-logos ">
+        <h4 class="findus">find us on:</h4>
+        <ul class="unstyled-list">
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact Us-->
+  <section id="contact" class="contact-us">
+    <div class="width-container">
+      <!--Contact Info-->
+      <div class="contact-info">
+        <div class="contactlogo">
+          <img src="imgs/header/logoBlack.png" draggable="false" style="width:250px;">
+        </div>
+        <div class="contactsection booking">
+          <h3>Book an Appointment</h3>
+          <p>Send us a message to book your appointment now!</p>
+        </div>
+        <div class="contactsection opening">
+          <h3>Opening Hours:</h3>
+          <p><b>Mon - Fri:</b> 7am - 10pm</p>
+          <p><b>Saturday:</b> 8am - 10pm</p>
+          <p><b>​Sunday:</b> 8am - 11pm</p>
+        </div>
+        <div class="contactsection info">
+          <h3>Contact info:</h3>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="tel:010-008-68973">01000868973</a>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <a href="mailto:info@shivachiwear.com">info@shivachiwear.com</a><br>
+        </div>
+        <div class="clear"></div>
+        <div class="section-logos ">
+          <h4 class="findus">find us on:</h4>
+          <ul class="unstyled-list">
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Contact Data-->
+      <div class="contact-data">
+        <div class="contact-header">
+          <h2><b>Contact Us</b></h2>
+          <p style="font-family: 'Quicksand', sans-serif;">Feel free to contact us at any time by email or phone, we will get back to you as soon as possible.</p>
+        </div>
+        <form id="mailSend" action="mail.php" enctype="multipart/form-data" method="post" style="box-sizing: border-box;">
+        <input class="contact-input short-input input-margin" type="text" placeholder="First Name.." id="nameclients" name="nameclients" required>
+        <input class="contact-input short-input" type="text" placeholder="Last Name.." id="lnameclients" name="lnameclients" required>
+        <input class="contact-input long-input" type="text" placeholder="Phone Number.." id="phoneclients" name="phoneclients" required>
+        <input class="contact-input short-input input-margin" type="text" placeholder="Subject.." id="subjectclients" name="subjectclients" required>
+        <input class="contact-input short-input" type="email" placeholder="E-mail address.." id="emailclients" name="emailclients" required>
+        <textarea title="contact-input message" placeholder="Remember, be nice!" rows="8" id="messageClients" name="messageClients" style="width: 100%;"></textarea>
+        <input class="send-message" type="submit" id="submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="footer-content footer-container">
+      <div class="footer-section logo">
+        <img src="imgs/header/logowhite1.png">
+        <h2 class="slogan">You are .. The Fashion Star<i class="fa fa-star-o" aria-hidden="true"></i>
+        </h2>
+      </div>
+      <div class="footer-section explore">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="unstyled-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html">LookBook</a></li>
+          <li><a href="home.html">About us</a></li>
+          <li><a href="home.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section follow">
+        <h3 class="footer-title">Follow us</h3>
+        <ul class="unstyled-list">
+          <li class="instagram"><a href="#"><i class="fa fa-instagram instagramicon" aria-hidden="true">&nbsp;</i>Instagram</a></li>
+          <li class="facebook"><a href="#"><i class="fa fa-facebook-official facebookicon" aria-hidden="true">&nbsp;</i>Facebook</a></li>
+          <li class="twitter"><a href="#"><i class="fa fa-twitter-square twittericon" aria-hidden="true">&nbsp;</i>Twitter</a></li>
+          <li class="pinterest"><a href="#"><i class="fa fa-pinterest-square pinteresticon" aria-hidden="true">&nbsp;</i>pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Copyright-->
+    <div class="footer-copyright">
+      <p class="footerParagraph">Copyright &copy all rights reserved.  </p><p class="footerParagraph" style="margin: 0 .7%;" >Developed by</p>
+      <a href="https://www.facebook.com/SeedsEGY/" target="_blank"><img class="footerimg" src="imgs/header/seeds2.png"></a>
+    </div>
+  </footer>
+  <style>
+  .footerParagraph{
+    display: inline-block;
+    font-size: 1.2em;
+    margin: auto;
+  }
+  .footerimg{
+    width: 5em;
+    margin-bottom: -6px;
+    margin-left: -2px;
+  }
+  @media (max-width: 530px){
+    .footerParagraph{
+    display: inline-block;
+    font-size: .8em;
+    margin: auto;
+  }
+  .footerimg{
+    width: 2.4em;
+    margin-bottom:-3px;
+  }
+  }
+  @media (max-width: 433px){
+    .footer{
+      height: 100%;
+    }
+    .footerParagraph{
+    display: inline-block;
+    font-size: .6em;
+    margin: auto;
+    padding-bottom: 80px;
+    margin-top: -40px;
+  }
+  .footerimg{
+    width: 2em;
+    margin-bottom:-3px;
+  }
+  }
+  </style>
+
+  <!--Back To Top Arrow-->
+  <a id="back2Top" title="Back to top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<script src="scripts/script.js"></script>
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+      document.getElementById("headerlogo").style.fontSize = "5vw";
+      document.getElementById("headerlogo").style.margin= "20px";
+    } else {
+      document.getElementById("headerlogo").style.fontSize = "10vw";
+      document.getElementById("headerlogo").style.margin= "40vh auto";
+      document.getElementById("headerlogo").style.display= "block";    
+    }
+  }
+  </script>
+  <script>
+    window.addEventListener('scroll', function() {
+      var currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (currScrollPos2 > 60) {
+        document.getElementById('navmenu').style.opacity = currScrollPos2 * 60 + 2;
+      }
+    });
+  </script>
+
+  
+</body>
+</html>

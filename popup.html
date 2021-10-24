@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Headland+One&family=Quicksand:wght@300&family=Syncopate&display=swap" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <title>Shivachi</title>
+    <style>
+        .popup-overlay{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+        .popup{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 500px;
+            height: 400px;
+            background-image: url(imgs/header/popup.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #close{
+            display: none;
+        }
+        .close{
+            position: absolute;
+            top:10px;
+            right:10px;
+        }
+        .close i{
+            cursor: pointer;
+        }
+        .subscribe{
+            padding: 35px 30px; 
+            font-family: 'Sofia', cursive;
+            font-size: 2em;
+        }
+        .smallicon{
+            font-size: .7em;
+        }
+        .sub-content{
+            width: 70%;
+            padding-left: 30px;
+            font-family: 'Abhaya Libre', serif;
+        }
+        .pop-mail{
+            background-color:transparent;
+            margin: 50px 0 0 30px;
+            width: 50%;
+        }
+        .pop-send{
+            display: block;
+            font-family: 'Playfair Display', serif;
+            color: black;
+            background-color: transparent;
+            margin : 30px;
+            width: 50%;
+            font-size: 1.1em;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 28px 0 rgba(0, 0, 0, 0.19);
+        }
+        .pop-send:hover{
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!--Pop Up Overlay-->
+    <div class="popup-overlay" id="showOrHide">
+        <div class="popup">
+            <input onclick="showOrHideDiv()" type="checkbox" id="close"/>
+            <label class="close" for="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></label>
+            <h2 class="subscribe">Subscribe!<i class="fa fa-bell-o smallicon" aria-hidden="true"></i></h2>
+            <p class="sub-content">By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our Privacy Policy.</p>
+            <form class="inputs" action="/action_page.php">
+                <input class="contact-input pop-mail" type="email" placeholder="Email address..">
+                <input class="send-message pop-send" type="submit" value="SUBSCRIBE">
+            </form>
+        </div>
+    </div>
+    <script>
+        function showOrHideDiv() {
+           var v = document.getElementById("showOrHide");
+           if (v.style.display === "none") {
+              v.style.display = "block";
+           } else {
+              v.style.display = "none";
+           }
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Headland+One&family=Quicksand:wght@300&family=Syncopate&display=swap" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <title>Shivachi | Dresses</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+              <div id="navshadow">
+                <a href="home.html"><img class="logo" src="imgs/header/logowhite1.png" draggable="false" alt="logo" style="width: 18%;"/></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Dresses-->
+    <section id="dresses" class="dresses">
+        <div class="seccontainer highcontainer">
+            <div class="section-header dresses-header">
+                <h2 class="section-title dresses-title">Summer Collection</h2>
+                <span class="line"></span>
+            </div>
+            <div class="dresses-items">
+                <div class="dresses-item">
+                    <div class="dresses-img">
+                        <img src="imgs/dresses/black1.JPG" />
+                        <div class="dresses-overlay">
+                            <img src="imgs/dresses/black2.JPG" width="200" />
+                            <ul class="unstyled-list">
+                                <li title="View"><a href="dress1.html"><i class="fa fa-eye fa-x"></i></a></li>
+                                <li title="Share via"><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="dresses-info">
+                            <br />
+                            <h3>Fit & Flare Sequin</h3>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="dresses-item">
+                    <div class="dresses-img">
+                        <img src="imgs/dresses/blue1.jpg" />
+                        <div class="dresses-overlay">
+                            <img src="imgs/dresses/blue2.jpg" />
+                            <ul class="unstyled-list">
+                                <li title="View"><a href="dress2.html"><i class="fa fa-eye fa-x"></i></a></li>
+                                <li title="Share via"><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="dresses-info">
+                            <br />
+                            <h3>Mini Cerulean</h3>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="dresses-item">
+                    <div class="dresses-img">
+                        <img src="imgs/dresses/white1.JPG" />
+                        <div class="dresses-overlay">
+                            <img src="imgs/dresses/white2.JPG" />
+                            <ul class="unstyled-list">
+                                <li title="View"><a href="dress3.html"><i class="fa fa-eye fa-x"></i></a></li>
+                                <li title="Share via"><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="dresses-info">
+                            <br />
+                            <h3>Off-white Ball Gown</h3>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="dresses-item">
+                    <div class="dresses-img">
+                        <img src="imgs/dresses/blackside1.jpg" />
+                        <div class="dresses-overlay">
+                            <img src="imgs/dresses/blackside2.jpg" />
+                            <ul class="unstyled-list">
+                                <li title="View"><a href="dress4.html"><i class="fa fa-eye fa-x"></i></a></li>
+                                <li title="Share via"><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="dresses-info">
+                            <br />
+                            <h3>Black Mermaid</h3>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="home.html" style="margin:0 ; padding: 0; position: fixed; color: black; bottom: 20px; left: 20px; "><i class="fa fa-angle-double-left" aria-hidden="true" style="font-size:65px"></i></a>
+    </section>
+
+    
+
+
+    <a id="back2Top" title="Back to top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+
+    <script>
+        $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Headland+One&family=Quicksand:wght@300&family=Syncopate&display=swap" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/scarves.css" rel="stylesheet">   
+    <title>Shivachi - Scarves</title>
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="header-content">
+          <div id="navshadow">
+            <a href="home.html"><img class="logo" src="imgs/header/logowhite1.png" draggable="false" alt="logo" style="width: 18%;"/></a>
+        </div>
+    </div>
+  </header>
+  
+  <div class="slider__warpper">
+      <div class="flex__container flex--pikachu flex--active" data-slide="1">
+        <div class="flex__item flex__item--left">
+          <div class="flex__content">
+            <p class="text--sub" style="color: white;">Mushu Scarves</p>
+            <h1 class="text--big">Summer</h1>
+            <p class="text--normal desc">Our summer mushu scarves are lightweight acrylic scaf.</p>
+            <h2 class="text--normal desc">Material: 100% high-quality acrylic.</h3>
+            <h2 class="text--normal desc">Design: double-sided.</h3>
+            <h2 class="text--normal desc">Colours: no colour limitations!</h3>
+            <h2 class="text--normal desc">Fringe: no limit.</h3>
+          </div>
+          <p class="text__background">Summer</p>
+        </div>
+        <div class="flex__item flex__item--right"></div>
+        <img class="pokemon__img" src="imgs/scarves/summer.png" />
+      </div>
+      <div class="flex__container flex--piplup animate--start" data-slide="2">
+        <div class="flex__item flex__item--left">
+          <div class="flex__content">
+            <p class="text--sub" style="color: white;">Blanket Scarves</p>
+            <h1 class="text--big">Traditional</h1>
+            <p class="text--normal">Our traditional blanket mushu scarf is our most popular type of scarf.</p>
+            <h2 class="text--normal desc">Material: 100% high-quality wool.</h3>
+              <h2 class="text--normal desc">Design: double-sided.</h3>
+              <h2 class="text--normal desc">Colours: up to 5 colours.</h3>
+              <h2 class="text--normal desc">Fringe: up to 10 colours.</h3>
+          </div>
+          <p class="text__background">Traditional</p>
+        </div>
+        <div class="flex__item flex__item--right"></div>
+        <img class="pokemon__img" src="imgs/scarves/traditional.png" />
+      </div>
+    </div>
+    <div class="slider__navi">
+      <a href="#" class="slide-nav active" data-slide="1">Summer</a>
+      <a href="#" class="slide-nav" data-slide="2">traditional</a>
+    </div>
+    <a href="home.html" style="margin:0 ; padding: 0; position: fixed; color: #f1f1f1; bottom: 20px; left: 20px; z-index: 5000; "><i class="fa fa-angle-double-left" aria-hidden="true" style="font-size:65px"></i></a>
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+      <script>
+          $('.slide-nav').on('click', function(e) {
+  e.preventDefault();
+  // get current slide
+  var current = $('.flex--active').data('slide'),
+    // get button data-slide
+    next = $(this).data('slide');
+
+  $('.slide-nav').removeClass('active');
+  $(this).addClass('active');
+
+  if (current === next) {
+    return false;
+  } else {
+    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+    $('.flex--active').addClass('animate--end');
+    setTimeout(function() {
+      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+    }, 800);
+  }
+});
+      </script>
+
+
+
+
+
+    <a id="back2Top" title="Back to top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+
+    <script>
+        $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+</script>
+
+</body>
+</html>
